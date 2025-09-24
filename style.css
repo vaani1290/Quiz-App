@@ -1,0 +1,117 @@
+/* Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Body */
+body {
+  background: linear-gradient(135deg, #8e44ad, #3498db);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding: 10px;
+}
+
+/* Card Style */
+.card {
+  background: #fff;
+  border-radius: 15px;
+  padding: 2rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  max-width: 500px;
+  transition: transform 0.3s ease;
+}
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* Headings */
+h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+/* Input Fields */
+input[type="text"], input[type="password"] {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+input:focus {
+  border-color: #8e44ad;
+  outline: none;
+  box-shadow: 0 0 6px rgba(142, 68, 173, 0.3);
+}
+
+/* Buttons */
+button {
+  background: linear-gradient(135deg, #8e44ad, #732d91);
+  color: #fff;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  width: 100%;
+  margin-top: 12px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+button:hover {
+  background: linear-gradient(135deg, #732d91, #8e44ad);
+  transform: scale(1.03);
+}
+
+/* Progress Bar */
+#progress-bar {
+  height: 8px;
+  background: #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+  margin: 15px 0;
+}
+#progress {
+  height: 100%;
+  width: 0%;
+  background: linear-gradient(135deg, #8e44ad, #3498db);
+  transition: width 0.3s ease;
+}
+
+/* Timer */
+.timer {
+  text-align: center;
+  font-weight: bold;
+  color: #e74c3c;
+  margin-bottom: 10px;
+}
+
+/* Leaderboard */
+.leaderboard ol {
+  margin: 15px 0;
+  padding-left: 20px;
+}
+.leaderboard li {
+  background: #f8f8f8;
+  padding: 8px;
+  margin: 5px 0;
+  border-radius: 6px;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .card {
+    padding: 1.5rem;
+  }
+  button {
+    font-size: 0.95rem;
+    padding: 10px;
+  }
+}
